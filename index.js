@@ -11,7 +11,7 @@ form.onsubmit = function(e) {
     var inputList = document.querySelector('input').value
     // SIDENOTE: var data = this(or e.target).NAMEATTRITBUTE.value
     // No input w/o value/space
-    if(inputList == "" || inputList.trim().length === 0){
+    if(inputList.trim().length === 0){
         form.reset()
         return
     } else {
